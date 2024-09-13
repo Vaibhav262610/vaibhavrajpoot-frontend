@@ -17,7 +17,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 w-8/12">
+        <div className="flex flex-col gap-4 w-8/12 max-w-8/12">
           <p className=" text-2xl text-green-400 font-semibold">About Me</p>
           <p className="text-xl text-gray-400">
             I am a Front-end creative developer based in Barielly, India. bhlahh
