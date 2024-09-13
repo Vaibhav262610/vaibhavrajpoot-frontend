@@ -20,11 +20,11 @@ const Header = () => {
               <span className=" text-yellow-400">
                 {greaterThan}code /&gt;{" "}
               </span>{" "}
-              so you don't have to
+              so you don&apos;t have to
             </h1>
             <p className="text-zinc-500 w-8/12 text-xl font-light ">
               {" "}
-              I'm your friendly neighborhood{" "}
+              I&aps;m your friendly neighborhood{" "}
               <span className="text-slate-400 font-bold">
                 Front-End Developer
               </span>
