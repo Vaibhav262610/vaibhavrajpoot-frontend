@@ -5,7 +5,7 @@ import projects from "../projects/projects";
 const Work = () => {
   return (
     <>
-      <div className="h-screen w-full flex flex-col justify-center items-center">
+      <div className="h-[150vh] gap-12 w-full flex flex-col justify-center items-center">
         <div className="about-section">
           <div className="flex items-center justify-center text-3xl">
             <h1 className="about-heading">&lt;Work /&gt;</h1>
@@ -19,7 +19,7 @@ const Work = () => {
             Some Selected Projects
           </p>
         </div>
-        <div className="grid grid-cols-3 grid-rows-2 gap-8">
+        <div className="grid grid-cols-3 grid-rows-2 mt-12 gap-8">
           {projects.map((items) => {
             return (
               <div
@@ -67,6 +67,11 @@ const Work = () => {
               </div>
             );
           })}
+        </div>
+        <div>
+          <button className="border-2 hover:bg-yellow-400 hover:text-white duration-200 border-yellow-400 text-yellow-400 py-3 text-sm px-8 rounded-lg font-bold">
+            View More
+          </button>
         </div>
       </div>
     </>

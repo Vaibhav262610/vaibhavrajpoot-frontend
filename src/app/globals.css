@@ -53,3 +53,15 @@ body {
   background-color: #1d2f41;
   border: 0.1rem solid rgb(206, 206, 206);
 }
+
+.github {
+  z-index: 2;
+  right: 5rem;
+  bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  cursor: pointer;
+  position: fixed;
+}
