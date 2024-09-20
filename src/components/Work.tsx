@@ -1,11 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import projects from "../projects/projects";
+import Link from "next/link";
 
 const Work = () => {
+  const limitedProjects = projects.slice(0, 6);
   return (
     <>
-      <div className="h-[150vh] gap-12 w-full flex flex-col justify-center items-center">
+      <div className="h-[200vh] gap-12 w-full flex flex-col justify-center items-center">
         <div className="about-section">
           <div className="flex items-center justify-center text-3xl">
             <h1 className="about-heading">&lt;Work /&gt;</h1>
@@ -20,7 +22,7 @@ const Work = () => {
           </p>
         </div>
         <div className="grid grid-cols-3 grid-rows-2 mt-12 gap-8">
-          {projects.map((items) => {
+          {limitedProjects.map((items) => {
             return (
               <div
                 key={items.id}
@@ -69,9 +71,11 @@ const Work = () => {
           })}
         </div>
         <div>
-          <button className="border-2 hover:bg-yellow-400 hover:text-white duration-200 border-yellow-400 text-yellow-400 py-3 text-sm px-8 rounded-lg font-bold">
-            View More
-          </button>
+          <Link href="/allProjects">
+            <button className="border-2 hover:bg-yellow-400 hover:text-white duration-200 border-yellow-400 text-yellow-400 py-3 text-sm px-8 rounded-lg font-bold">
+              View More
+            </button>
+          </Link>
         </div>
       </div>
     </>
