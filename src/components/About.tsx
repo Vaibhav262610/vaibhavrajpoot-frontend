@@ -19,9 +19,14 @@ const About = () => {
 
         <div className="flex flex-col gap-4 w-8/12 max-w-8/12">
           <p className=" text-2xl text-green-400 font-semibold">About Me</p>
-          <p className="text-xl text-gray-400">
-            I am a Front-end creative developer based in Barielly, India. bhlahh
-            blahh blahhhh
+          <p className="text-xl w-8/12 text-gray-400">
+            I’m a passionate frontend developer dedicated to creating intuitive
+            and engaging user experiences. I love transforming design concepts
+            into responsive, visually appealing websites and constantly seek to
+            learn new technologies. Collaboration is key for me, as I enjoy
+            working with designers and other developers to bring ideas to life.
+            In my free time, I explore the latest web trends and experiment with
+            new frameworks.
           </p>
           <p className="text-xl text-green-400 font-bold">Want to know more?</p>
           <Link href="/Progress">
