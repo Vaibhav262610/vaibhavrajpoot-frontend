@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #020a13;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #05182c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 255, 255);
+}
+
+.about-heading {
+  color: #020a13;
+  font-size: 9rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fffb00;
+  font-weight: 600;
+}
+
+.about-section {
+  position: relative;
+}
+
+.name-heading {
+  bottom: -4rem;
+  position: absolute;
+  font-size: 6rem;
+  color: white;
+}
+
+.box {
+  background-color: #1d2f41;
+  border: 0.1rem solid rgb(206, 206, 206);
+}
+
+.github {
+  z-index: 2;
+  right: 5rem;
+  bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  cursor: pointer;
+  position: fixed;
+}
